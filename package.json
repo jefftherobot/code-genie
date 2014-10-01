@@ -1,0 +1,7 @@
+{
+  "dependencies": {},
+  "repository": "none",
+  "devDependencies": {
+    "wintersmith-nunjucks": "^0.5.0"
+  }
+}

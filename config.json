@@ -1,0 +1,12 @@
+{
+  "locals": {
+    "url": "http://localhost:9090",
+    "name": "Code Genie: Website Enhancer",
+    "owner": "Delphic",
+    "description": "Front End Development home world"
+  },
+  "plugins": [
+  "wintersmith-nunjucks"
+  ],
+  "port" : 9090
+}
