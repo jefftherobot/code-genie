@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>{{ name }}</title>
-  <meta name="description" content="{{ description }}">
-  <meta name="keywords" content="{{ keywords }}">
-  <meta name="viewport" content="width=device-width">
-  <meta property="og:title" content="{{ name }}">
-  <meta property="og:url" content="{{ url }}">
-  <meta property="og:description" content="{{ description }}">
-  <meta property="og:type" content="website">
-  <link rel="stylesheet" href="/styles/main.css">
-  <script src="/scripts/main.js"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>{{ name }}</title>
+	<meta name="viewport" content="width=device-width">
+	<meta property="og:title" content="{{ name }}">
+	<meta property="og:url" content="{{ url }}">
+	<meta property="og:description" content="{{ description }}">
+	<meta property="og:type" content="website">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic,600italic,700italic">
+	<link rel="stylesheet" href="/css/main.css">
+	<script src="/scripts/main.js"></script>
+	{{ env.helpers.livereload() | safe }}
 </head>
 <body>
-	<h1>{{page.title}}</h1>
-	<h2>{{page.metadata.author}}</h2>
-  {% block body %}{% endblock %}
+	<nav id="side-nav">
+		{% block sidenav %}{% endblock %}
+
+	</nav>
+	<main id="content">
+		{% block body %}{% endblock %}
+	</main>
+	<footer id="footer">
+	</footer>
 </body>
 </html>

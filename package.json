@@ -2,6 +2,8 @@
   "dependencies": {},
   "repository": "none",
   "devDependencies": {
-    "wintersmith-nunjucks": "^0.5.0"
+    "wintersmith-livereload": "^0.1.1",
+    "wintersmith-nunjucks": "^0.5.0",
+    "wintersmith-sass": "^0.3.0"
   }
 }

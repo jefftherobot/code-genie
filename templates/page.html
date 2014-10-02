@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block sidenav %}
+
+	{% set elements = env.helpers.getAllPages(contents) %}
+
+	<pre>
+		{{ env.helpers.debug(elements) }}
+	</pre>
+
+	<ul class="article-list">
+		 {% for item in contents %}
+			<li>{{ item.title }}</li>
+		 {% endfor %}
+	</ul>
+{% endblock %}
+
+{% block body %}
+	<h1>{{page.title}}</h1>
+	<h2>{{page.metadata.author}}</h2>
+  {{page.html}}
+{% endblock %}

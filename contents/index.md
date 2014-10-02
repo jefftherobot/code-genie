@@ -3,7 +3,7 @@ title: Home
 subtitle: Test subtitle
 author: Jeff Mills
 date: 2013-01-02
-template: index.html
+template: page.html
 ---
 
 Wintersmith is made by [Johan Nordberg][1] and licensed under the [MIT-license][2].

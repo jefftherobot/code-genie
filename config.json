@@ -6,7 +6,11 @@
     "description": "Front End Development home world"
   },
   "plugins": [
-  "wintersmith-nunjucks"
+    "wintersmith-nunjucks",
+    "wintersmith-node-sass",
+    "wintersmith-livereload",
+    "./plugins/contentHelpers.js",
+    "./plugins/debug.js"
   ],
   "port" : 9090
 }
